@@ -1,38 +1,66 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div span:nth-child(3){
+background-color: brown;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+color: aliceblue;
+cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.warper{
+  position: relative;
+  padding: 50px 0 ;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+align-items: center;
+justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.adduser{
+position: absolute;
+bottom: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  padding: 10px 20px;
+transition: all 1s ease;
 }
+
+.card:hover{
+  transform: scale(1.02);
+}
+
+
+.ipt{
+  width: 90%;
+  padding: 15px 20px;
+  font-size: 25px;
+  margin-bottom: 50px;
+
+}
+
+ul li{
+  list-style: none;
+  font-size: 40px;
+}
+
+.header{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.header img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
